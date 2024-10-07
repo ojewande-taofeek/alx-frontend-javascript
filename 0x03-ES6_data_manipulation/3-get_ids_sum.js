@@ -7,6 +7,5 @@ You must use the reduce function on the array.
 */
 
 export default function getStudentIdsSum(students) {
-  const idSum = students.reduce((accum, student) => accum + student.id, 0);
-  return idSum;
+  return students.reduce((accum, student) => accum + student.id, 0);
 }
