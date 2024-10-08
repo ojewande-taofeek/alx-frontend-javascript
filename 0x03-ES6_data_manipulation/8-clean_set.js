@@ -1,6 +1,6 @@
 export default function cleanSet(set, startString) {
   let text = '';
-  if (startString !== '') {
+  if (startString) {
     for (const element of set) {
       if (element.startsWith(startString)) {
         const newElement = element.substring(startString.length);
