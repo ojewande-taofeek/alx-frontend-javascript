@@ -2,9 +2,8 @@
 // using map
 export default function getListStudentIds(anArray) {
   if (Array.isArray(anArray)) {
-    const mappedArray = anArray.map((element) => element.id)
+    const mappedArray = anArray.map((element) => element.id);
     return mappedArray;
-  } else {
-    return []
   }
+  return [];
 }
