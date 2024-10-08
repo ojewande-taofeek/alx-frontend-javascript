@@ -7,7 +7,9 @@ export default function cleanSet(set, startString) {
         text += `${newElement}-`;
       }
     }
-    text = text.slice(0, -1);
+    if (text.endsWith('-')) {
+      text = text.slice(0, -1);
+    }
   }
   return text;
 }
