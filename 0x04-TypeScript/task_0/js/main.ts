@@ -19,9 +19,7 @@ const student2: Student = {
     location: 'Abuja',
 }
 
-
-
-const studentsList = [student1, student2];
+const studentsList: Student[] = [student1, student2];
 
 document.body.onload= addTable;
 
