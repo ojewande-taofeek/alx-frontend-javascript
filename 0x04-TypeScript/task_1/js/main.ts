@@ -33,3 +33,12 @@ const director1: Directors = {
 console.log(director1);
 
 
+const printTeacher = (firstName: string, lastName: string) => {
+  return `${firstName[0]}. ${lastName}`
+}
+
+// Example
+console.log(printTeacher("John", "Doe"));
+
+
+
