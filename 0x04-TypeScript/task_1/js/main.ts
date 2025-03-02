@@ -33,12 +33,36 @@ const director1: Directors = {
 console.log(director1);
 
 
-const printTeacher = (firstName: string, lastName: string) => {
+const printTeacher = (firstName: string, lastName: string): string => {
   return `${firstName[0]}. ${lastName}`
 }
 
 // Example
 console.log(printTeacher("John", "Doe"));
+
+interface StudentInterface {
+  firstName: string,
+  lastName: string,
+  workOnHomework(): string,
+  displayName(): string,
+};
+
+class StudentClass implements StudentInterface {
+    firstName: string;
+    lastName: string;
+
+    constructor(firstName: string, lastName: string) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+   workOnHomework(): string {
+        return `Currently working`
+    };
+    displayName(): string {
+        return this.firstName;
+    };
+}
 
 
 
