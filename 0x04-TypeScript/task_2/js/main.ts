@@ -62,5 +62,18 @@ const executeWork = (employee: Director | Teacher): string => {
 }
 
 // Example 
-console.log(executeWork(createEmployee(200)));
-console.log(executeWork(createEmployee(1000)));
+// console.log(executeWork(createEmployee(200)));
+// console.log(executeWork(createEmployee(1000)));
+
+type Subject = 'Math' | 'History';
+
+const teachClass = (todayClass: Subject): string => {
+  if (todayClass === 'Math') {
+    return 'Teaching Math';
+  }
+  return 'Teaching History';
+}
+
+// Example
+console.log(teachClass('Math'));
+console.log(teachClass('History'));
