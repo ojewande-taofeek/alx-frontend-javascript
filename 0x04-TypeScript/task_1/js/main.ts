@@ -64,5 +64,8 @@ class StudentClass implements StudentInterface {
     };
 }
 
-
-
+// Example
+const student = new StudentClass('Abiodun', 'Hussein');
+console.log(student);
+console.log(student.displayName());
+console.log(student.workOnHomework());
